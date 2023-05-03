@@ -1,0 +1,51 @@
+  {/* item 2 */}
+            <h6 className="d-flex justify-content-start offset-sm-2 mt-3" >Question 2: Which title do you prefer?</h6>
+            <div className="d-flex justify-content-center">
+              <div className="col-sm-4 d-inline-block pe-2">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img style={imgStyle} className="card-img-top mx-auto d-block img-fluid col-3" src="/assets/images/infinity.jpg" alt="Image 1" />
+                    <button type="button" name="item2" value="ans1" style={{backgroundColor: `${vote.vote2===3 ? "red" : ""}`}} className="btn btn-primary mt-2 col-sm-6" onClick={(e)=>handleLike(e,3)}>
+                      <FontAwesomeIcon icon={faThumbsUp} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4 d-inline-block">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img style={imgStyle} className="card-img-top mx-auto d-block img-fluid col-3" src="/assets/images/endgame.jpg" alt="Image 1" />
+                    <button type="button" name="item2" value="ans2" style={{backgroundColor: `${vote.vote2===4 ? "red" : ""}`}} className="btn btn-primary mt-2 col-sm-6" onClick={(e)=>handleLike(e,4)}>
+                      <FontAwesomeIcon icon={faThumbsUp} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* item 3 */}
+            <h6 className="d-flex justify-content-start offset-sm-2 mt-3" >Question 3: Which cinema do you prefer?</h6>
+            <div className="d-flex justify-content-center">
+              <div className="col-sm-4 d-inline-block pe-2">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img style={imgStyle} className="card-img-top mx-auto d-block img-fluid col-3" src="/assets/images/robinsons.jpg" alt="Image 1" />
+                    <button type="button" name="item3" value="ans1"  style={{backgroundColor: `${vote.vote3===5 ? "red" : ""}`}} className="btn btn-primary mt-2 col-sm-6" onClick={(e)=>handleLike(e,5)}>
+                      <FontAwesomeIcon icon={faThumbsUp} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4 d-inline-block">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <img style={imgStyle} className="card-img-top mx-auto d-block img-fluid col-3" src="/assets/images/imax.jpg" alt="Image 1" />
+                    <button type="button" name="item3" value="ans2" style={{backgroundColor: `${vote.vote3===6 ? "red" : ""}`}} className="btn btn-primary mt-2 col-sm-6" onClick={(e)=>handleLike(e,6)}>
+                      <FontAwesomeIcon icon={faThumbsUp} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" className="btn btn-success mt-3 mb-5 col-sm-8 offset-sm-2"><span className="h4">Submit</span></button>
+          </div>
+        </div>
